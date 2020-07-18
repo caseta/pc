@@ -11,5 +11,6 @@ Type|Item|
 **Storage** | [Samsung 850 EVO 250 GB M.2-2280 Solid State Drive](https://pcpartpicker.com/product/8WZ2FT/samsung-internal-hard-drive-mzn5e250bw) |
 **Video Card** | Nvidia GeForce GTX 1060 3GB |
 **Power Supply** | [Corsair TXM Gold 750 W 80+ Gold Certified Semi-modular ATX Power Supply](https://pcpartpicker.com/product/JfBrxr/corsair-txm-gold-750w-80-gold-certified-semi-modular-atx-power-supply-cp-9020131-na) |
+**Case** | [Cooler Master MasterCase MC500 ATX Mid Tower Case](https://pcpartpicker.com/product/xgPKHx/cooler-master-mastercase-mc500-atx-mid-tower-case-mcm-m500-kg5n-s00) |
 **Operating System** | [Microsoft Windows 10 Home OEM 64-bit](https://pcpartpicker.com/product/wtgPxr/microsoft-os-kw900140) |
 **Monitor** | [BenQ GL2760H 27.0" 1920x1080 60 Hz Monitor](https://pcpartpicker.com/product/77ckcf/benq-monitor-gl2760h) |
