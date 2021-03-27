@@ -13,4 +13,5 @@ Type|Item|
 **Power Supply** | [Corsair TXM Gold 750 W 80+ Gold Certified Semi-modular ATX Power Supply](https://pcpartpicker.com/product/JfBrxr/corsair-txm-gold-750w-80-gold-certified-semi-modular-atx-power-supply-cp-9020131-na) |
 **Case** | [Cooler Master MasterCase MC500 ATX Mid Tower Case](https://pcpartpicker.com/product/xgPKHx/cooler-master-mastercase-mc500-atx-mid-tower-case-mcm-m500-kg5n-s00) |
 **Operating System** | [Microsoft Windows 10 Home OEM 64-bit](https://pcpartpicker.com/product/wtgPxr/microsoft-os-kw900140) |
-**Monitor** | [BenQ GL2760H 27.0" 1920x1080 60 Hz Monitor](https://pcpartpicker.com/product/77ckcf/benq-monitor-gl2760h) |
+**Monitor 1** | [Dell S2721DGF 27.0" 2560x1440 165 Hz Monitor](https://pcpartpicker.com/product/K2cRsY/dell-s2721dgf-270-2560x1440-165-hz-monitor-s2721dgf) |
+**Monitor 2** | [BenQ GL2760H 27.0" 1920x1080 60 Hz Monitor](https://pcpartpicker.com/product/77ckcf/benq-monitor-gl2760h) |
