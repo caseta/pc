@@ -1,8 +1,5 @@
-# My PC
-
-[PCPartPicker Part List](https://pcpartpicker.com/list/mTZMhg)
-
-Type|Item|
+# my pc
+part|item|
 :----|:----|
 **CPU** | [Intel Core i5-9600K 3.7 GHz 6-Core Processor](https://pcpartpicker.com/product/28qhP6/intel-core-i5-9600k-37ghz-6-core-processor-bx80684i59600k) | 
 **CPU Cooler** | [Noctua NH-U12S chromax.black 55 CFM CPU Cooler](https://pcpartpicker.com/product/dMVG3C/noctua-nh-u12s-chromaxblack-55-cfm-cpu-cooler-nh-u12s-chromaxblack) | 
@@ -15,3 +12,5 @@ Type|Item|
 **Operating System** | [Microsoft Windows 10 Home OEM 64-bit](https://pcpartpicker.com/product/wtgPxr/microsoft-os-kw900140) |
 **Monitor 1** | [Dell S2721DGF 27.0" 2560x1440 165 Hz Monitor](https://pcpartpicker.com/product/K2cRsY/dell-s2721dgf-270-2560x1440-165-hz-monitor-s2721dgf) |
 **Monitor 2** | [BenQ GL2760H 27.0" 1920x1080 60 Hz Monitor](https://pcpartpicker.com/product/77ckcf/benq-monitor-gl2760h) |
+
+- _[pc part picker list](https://pcpartpicker.com/list/mTZMhg)_
