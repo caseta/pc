@@ -18,3 +18,4 @@ part|item|
 **Headphones** | [HyperX Cloud Flight S 7.1 Channel Headset](https://pcpartpicker.com/product/VWyqqs/kingston-hyperx-cloud-flight-s-71-channel-headset-hx-hscfs-sgww) |
 
 - _[pc part picker list](https://pcpartpicker.com/list/mTZMhg)_
+- [laptop specs](https://support.apple.com/kb/SP858?viewlocale=en_US&locale=en_US)
