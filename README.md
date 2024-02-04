@@ -4,7 +4,7 @@ part|item|
 **CPU** | [Intel Core i7-13700K 3.4 GHz 16-Core Processor](https://pcpartpicker.com/product/Mm6p99/intel-core-i7-13700k-34-ghz-16-core-processor-bx8071513700k) | 
 **CPU Cooler** | [Noctua NH-U12S chromax.black 55 CFM CPU Cooler](https://pcpartpicker.com/product/dMVG3C/noctua-nh-u12s-chromaxblack-55-cfm-cpu-cooler-nh-u12s-chromaxblack) | 
 **Motherboard** | [Asus Prime Z790-P Wifi D5 LGA1700 Motherboard](https://pcpartpicker.com/product/nCGbt6/asus-prime-z790-p-wifi-atx-lga1700-motherboard-prime-z790-p-wifi) | 
-**Memory** | [Corsair Vengeance LPX 16 GB (2 x 8 GB) DDR4-3000 CL15 Memory](https://pcpartpicker.com/product/MYH48d/corsair-memory-cmk16gx4m2b3000c15) |
+**Memory** | [G.Skill Trident 32 GB (2 x 16 GB) DDR5-6000 CL36 Memory](https://pcpartpicker.com/product/mhJgXL/gskill-trident-z5-rgb-32-gb-2-x-16-gb-ddr5-6000-cl36-memory-f5-6000j3636f16gx2-tz5rk) |
 **Storage 1** | [Samsung 970 EVO Plus 2 TB M.2-2280 NVME Solid State Drive](https://pcpartpicker.com/product/Fv8j4D/samsung-970-evo-plus-2-tb-m2-2280-nvme-solid-state-drive-mz-v7s2t0bam) |
 **Storage 2** | [Samsung 850 EVO 250 GB M.2-2280 Solid State Drive](https://pcpartpicker.com/product/8WZ2FT/samsung-internal-hard-drive-mzn5e250bw) |
 **Video Card** | Nvidia GeForce GTX 1060 3GB |
