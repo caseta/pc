@@ -1,7 +1,7 @@
 # my pc
 part|item|
 :----|:----|
-**CPU** | [Intel Core i5-9600K 3.7 GHz 6-Core Processor](https://pcpartpicker.com/product/28qhP6/intel-core-i5-9600k-37ghz-6-core-processor-bx80684i59600k) | 
+**CPU** | [Intel Core i7-13700K 3.4 GHz 16-Core Processor](https://pcpartpicker.com/product/Mm6p99/intel-core-i7-13700k-34-ghz-16-core-processor-bx8071513700k) | 
 **CPU Cooler** | [Noctua NH-U12S chromax.black 55 CFM CPU Cooler](https://pcpartpicker.com/product/dMVG3C/noctua-nh-u12s-chromaxblack-55-cfm-cpu-cooler-nh-u12s-chromaxblack) | 
 **Motherboard** | [MSI MPG Z390 GAMING PLUS ATX LGA1151 Motherboard](https://pcpartpicker.com/product/QDVD4D/msi-mpg-z390-gaming-plus-atx-lga1151-motherboard-mpg-z390-gaming-plus) | 
 **Memory** | [Corsair Vengeance LPX 16 GB (2 x 8 GB) DDR4-3000 CL15 Memory](https://pcpartpicker.com/product/MYH48d/corsair-memory-cmk16gx4m2b3000c15) |
