@@ -1,93 +1,86 @@
 # Desktop Setup Diagram
 
-This is a clean, editable Mermaid version of the hand-drawn diagram.
+This is an updated Mermaid version based on your color-coded reference image.
 
-> Note: A few line endpoints in the photo are ambiguous, so those are marked as `unlabeled` placeholders for easy updates.
+Color mapping used from your markup:
+- `Red` = Gaming PC
+- `Yellow` = Switch
+- `Green` = Right monitor
+- `Blue` = Center monitor
+- `Purple` = Left monitor
+
+> Note: Port groups are now modeled exactly by device color box. Cable paths are drawn for the visible runs; if you want, I can do one more pass to label each cable with a nickname (e.g., `Cable A`, `Cable B`) for easier future edits.
 
 ```mermaid
 flowchart LR
-    %% Devices
-    LM[Left Monitor]
-    CM[Center Monitor]
-    RM[Right Monitor]
-    SW[Switch]
-    PC[Gaming PC]
-
-    %% Port groups (kept separate so cable labels stay editable)
-    subgraph LeftSources[Left-side cable group]
-      LS_DP([DP])
-      LS_H1([HDMI])
-      LS_H2([HDMI])
+    %% Devices and exact port sets from your color boxes
+    subgraph LEFT[Left Monitor (Purple)]
+      LM[Left Monitor]
+      LM_DP([DP])
+      LM_H1([HDMI])
+      LM_H2([HDMI])
+      LM --- LM_DP
+      LM --- LM_H1
+      LM --- LM_H2
     end
 
-    subgraph RightSources[Right-side cable group]
-      RS_DP1([DP])
-      RS_DP2([DP])
-      RS_H1([HDMI])
-      RS_H2([HDMI])
+    subgraph CENTER[Center Monitor (Blue)]
+      CM[Center Monitor]
+      CM_DP([DP])
+      CM_H1([HDMI])
+      CM_H2([HDMI])
+      CM --- CM_DP
+      CM --- CM_H1
+      CM --- CM_H2
     end
 
-    %% Monitor input labels (from sketch)
-    LM_IN_DP([DP in])
-    LM_IN_H([HDMI in])
+    subgraph RIGHT[Right Monitor (Green)]
+      RM[Right Monitor]
+      RM_H1([HDMI])
+      RM_H2([HDMI])
+      RM_DP([DP])
+      RM --- RM_H1
+      RM --- RM_H2
+      RM --- RM_DP
+    end
 
-    CM_IN_DP([DP in])
-    CM_IN_H1([HDMI in])
-    CM_IN_H2([HDMI in])
+    subgraph SWITCH[Switch (Yellow)]
+      SW[Switch]
+      SW_DP1([DP])
+      SW_DP2([DP])
+      SW_H1([HDMI])
+      SW_EXT_H([HDMI external])
+      SW --- SW_DP1
+      SW --- SW_DP2
+      SW --- SW_H1
+    end
 
-    RM_IN_DP([DP in])
-    RM_IN_H1([HDMI in])
-    RM_IN_H2([HDMI in])
+    subgraph PCBOX[Gaming PC (Red)]
+      PC[Gaming PC]
+      PC_DP1([DP])
+      PC_H1([HDMI])
+      PC_DP2([DP])
+      PC_DP3([DP])
+      PC --- PC_DP1
+      PC --- PC_H1
+      PC --- PC_DP2
+      PC --- PC_DP3
+    end
 
-    %% PC output labels (from sketch)
-    PC_OUT_DP1([DP out])
-    PC_OUT_DP2([DP out])
-    PC_OUT_DP3([DP out])
-    PC_OUT_H([HDMI out])
-
-    %% Switch-side labels (from sketch)
-    SW_DP([DP])
-    SW_H([HDMI])
-
-    %% Cable runs interpreted from the sketch
-    LS_DP --> LM_IN_DP
-    LS_H1 --> LM_IN_H
-    LS_H2 --> LM_IN_H
-
-    LM_IN_DP --- LM
-    LM_IN_H --- LM
-
-    CM_IN_DP --- CM
-    CM_IN_H1 --- CM
-    CM_IN_H2 --- CM
-
-    RM_IN_DP --- RM
-    RM_IN_H1 --- RM
-    RM_IN_H2 --- RM
-
-    SW --- SW_DP
-    SW --- SW_H
-    SW_DP --> RM_IN_DP
-    SW_H --> RM_IN_H1
-
-    RS_DP1 --> SW_DP
-    RS_DP2 --> SW_DP
-    RS_H1 --> SW_H
-    RS_H2 --> SW_H
-
-    PC --- PC_OUT_DP1
-    PC --- PC_OUT_DP2
-    PC --- PC_OUT_DP3
-    PC --- PC_OUT_H
-
-    PC_OUT_DP1 --> CM_IN_DP
-    PC_OUT_H --> CM_IN_H1
-    PC_OUT_DP2 --> RM_IN_DP
-    PC_OUT_DP3 --> RM_IN_H2
+    %% Visible cable runs from the drawing
+    PC_DP1 --> LM_H2
+    PC_H1 --> CM_DP
+    PC_DP2 --> RM_DP
+    PC_DP3 --> RM_H2
+    CM_H2 --> SW_DP1
+    SW_DP2 --> RM_H1
+    SW_H1 --> SW_EXT_H
 ```
 
 ## How To Update
 
 - Open this file and edit labels/links in the Mermaid block.
 - Preview in GitHub or any Mermaid-enabled Markdown viewer.
-- If you want, I can do a second pass and make it exact by walking each cable one by one with you.
+- If you want full precision, send cable mapping in this format and I will update in one pass:
+  - `source port -> destination port`
+  - Example: `PC_DP2 -> RightMonitor_DP`
