@@ -14,7 +14,7 @@ Color mapping used from your markup:
 ```mermaid
 flowchart LR
     %% Devices and exact port sets from your color boxes
-    subgraph LEFT[Left Monitor (Purple)]
+    subgraph LEFT["Left Monitor (Purple)"]
       LM[Left Monitor]
       LM_DP([DP])
       LM_H1([HDMI])
@@ -24,7 +24,7 @@ flowchart LR
       LM --- LM_H2
     end
 
-    subgraph CENTER[Center Monitor (Blue)]
+    subgraph CENTER["Center Monitor (Blue)"]
       CM[Center Monitor]
       CM_DP([DP])
       CM_H1([HDMI])
@@ -34,7 +34,7 @@ flowchart LR
       CM --- CM_H2
     end
 
-    subgraph RIGHT[Right Monitor (Green)]
+    subgraph RIGHT["Right Monitor (Green)"]
       RM[Right Monitor]
       RM_H1([HDMI])
       RM_H2([HDMI])
@@ -44,7 +44,7 @@ flowchart LR
       RM --- RM_DP
     end
 
-    subgraph SWITCH[Switch (Yellow)]
+    subgraph SWITCH["Switch (Yellow)"]
       SW[Switch]
       SW_DP1([DP])
       SW_DP2([DP])
@@ -55,7 +55,7 @@ flowchart LR
       SW --- SW_H1
     end
 
-    subgraph PCBOX[Gaming PC (Red)]
+    subgraph PCBOX["Gaming PC (Red)"]
       PC[Gaming PC]
       PC_DP1([DP])
       PC_H1([HDMI])
