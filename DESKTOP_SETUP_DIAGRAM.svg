@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820">
+  <defs>
+    <style>
+      .bg { fill: #12151c; }
+      .panel { fill: #1d2330; stroke: #5a6478; stroke-width: 2; rx: 10; ry: 10; }
+      .title { fill: #e9eefc; font-family: Arial, sans-serif; font-size: 18px; font-weight: 700; }
+      .sub { fill: #c7d0e8; font-family: Arial, sans-serif; font-size: 14px; }
+      .port { fill: #2a3141; stroke: #8d99b8; stroke-width: 2; rx: 8; ry: 8; }
+      .portText { fill: #eef3ff; font-family: Arial, sans-serif; font-size: 13px; font-weight: 700; }
+      .wire { fill: none; stroke: #d8e1ff; stroke-width: 3; stroke-linecap: round; }
+      .deviceStrokeLeft { stroke: #d37dff; }
+      .deviceStrokeCenter { stroke: #6fe8ff; }
+      .deviceStrokeRight { stroke: #68ff84; }
+      .deviceStrokeSwitch { stroke: #ffe55a; }
+      .deviceStrokePc { stroke: #ff6d6d; }
+      .legendText { fill: #b8c3de; font-family: Arial, sans-serif; font-size: 13px; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1400" height="820" />
+
+  <!-- Top row: Left, Center, Right -->
+  <rect class="panel deviceStrokeLeft" x="80" y="80" width="320" height="240" />
+  <text class="title" x="100" y="112">Left Monitor (Purple)</text>
+  <rect class="port" x="108" y="138" width="64" height="34" />
+  <text class="portText" x="129" y="160">DP</text>
+  <rect class="port" x="188" y="138" width="90" height="34" />
+  <text class="portText" x="207" y="160">HDMI</text>
+  <rect class="port" x="292" y="138" width="90" height="34" />
+  <text class="portText" x="311" y="160">HDMI</text>
+
+  <rect class="panel deviceStrokeCenter" x="450" y="80" width="320" height="240" />
+  <text class="title" x="470" y="112">Center Monitor (Blue)</text>
+  <rect class="port" x="478" y="138" width="64" height="34" />
+  <text class="portText" x="499" y="160">DP</text>
+  <rect class="port" x="558" y="138" width="90" height="34" />
+  <text class="portText" x="577" y="160">HDMI</text>
+  <rect class="port" x="662" y="138" width="90" height="34" />
+  <text class="portText" x="681" y="160">HDMI</text>
+
+  <rect class="panel deviceStrokeRight" x="820" y="80" width="320" height="240" />
+  <text class="title" x="840" y="112">Right Monitor (Green)</text>
+  <rect class="port" x="848" y="138" width="90" height="34" />
+  <text class="portText" x="867" y="160">HDMI</text>
+  <rect class="port" x="952" y="138" width="90" height="34" />
+  <text class="portText" x="971" y="160">HDMI</text>
+  <rect class="port" x="1056" y="138" width="64" height="34" />
+  <text class="portText" x="1077" y="160">DP</text>
+
+  <!-- Switch on right side near right monitor -->
+  <rect class="panel deviceStrokeSwitch" x="1160" y="150" width="190" height="170" />
+  <text class="title" x="1178" y="182">Switch (Yellow)</text>
+  <rect class="port" x="1182" y="210" width="64" height="34" />
+  <text class="portText" x="1203" y="232">DP</text>
+  <rect class="port" x="1260" y="210" width="64" height="34" />
+  <text class="portText" x="1281" y="232">DP</text>
+  <rect class="port" x="1182" y="254" width="90" height="34" />
+  <text class="portText" x="1201" y="276">HDMI</text>
+
+  <!-- Gaming PC below all -->
+  <rect class="panel deviceStrokePc" x="500" y="470" width="400" height="240" />
+  <text class="title" x="520" y="502">Gaming PC (Red)</text>
+  <rect class="port" x="530" y="535" width="64" height="34" />
+  <text class="portText" x="551" y="557">DP</text>
+  <rect class="port" x="610" y="535" width="90" height="34" />
+  <text class="portText" x="629" y="557">HDMI</text>
+  <rect class="port" x="714" y="535" width="64" height="34" />
+  <text class="portText" x="735" y="557">DP</text>
+  <rect class="port" x="794" y="535" width="64" height="34" />
+  <text class="portText" x="815" y="557">DP</text>
+
+  <!-- HDMI Converter -->
+  <rect class="panel" x="990" y="380" width="240" height="120" />
+  <text class="title" x="1010" y="412">HDMI Converter</text>
+  <rect class="port" x="1012" y="435" width="90" height="34" />
+  <text class="portText" x="1031" y="457">HDMI</text>
+  <rect class="port" x="1120" y="435" width="64" height="34" />
+  <text class="portText" x="1141" y="457">DP</text>
+
+  <!-- Wires: exact mapping from user -->
+  <!-- Left monitor -->
+  <!-- Left DP -> Gaming PC DP2 -->
+  <path class="wire" d="M140 172 C 140 430, 746 430, 746 535" />
+  <!-- Left HDMI2 -> Switch HDMI -->
+  <path class="wire" d="M337 172 C 337 330, 1227 330, 1227 271" />
+
+  <!-- Center monitor -->
+  <!-- Center DP -> Gaming PC DP3 -->
+  <path class="wire" d="M510 172 C 510 430, 826 430, 826 535" />
+  <!-- Center HDMI2 -> HDMI Converter HDMI -->
+  <path class="wire" d="M707 172 C 707 290, 1057 290, 1057 452" />
+
+  <!-- Right monitor -->
+  <!-- Right HDMI2 -> Gaming PC HDMI -->
+  <path class="wire" d="M997 172 C 997 430, 655 430, 655 535" />
+  <!-- Right DP -> Switch DP1 -->
+  <path class="wire" d="M1088 172 C 1088 140, 1214 140, 1214 227" />
+
+  <!-- Switch -->
+  <!-- Switch DP2 -> HDMI Converter DP -->
+  <path class="wire" d="M1292 227 C 1292 350, 1152 350, 1152 452" />
+
+  <text class="legendText" x="80" y="770">Fixed-position SVG with exact wiring map: unused ports are intentionally left unconnected.</text>
+</svg>
