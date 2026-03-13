@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="920" viewBox="0 0 1500 920">
+  <defs>
+    <style>
+      .bg { fill: #12151c; }
+      .panel { fill: #1d2330; stroke: #5a6478; stroke-width: 2; rx: 10; ry: 10; }
+      .title { fill: #e9eefc; font-family: Arial, sans-serif; font-size: 18px; font-weight: 700; }
+      .port { fill: #2a3141; stroke: #8d99b8; stroke-width: 2; rx: 8; ry: 8; }
+      .portText { fill: #eef3ff; font-family: Arial, sans-serif; font-size: 13px; font-weight: 700; }
+      .wire { fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+      .wireDefault { stroke: #b7c3e0; marker-start: url(#arrow-default); marker-end: url(#arrow-default); }
+      .wirePc { stroke: #a98282; marker-start: url(#arrow-pc); marker-end: url(#arrow-pc); }
+      .wireSwitch { stroke: #a89f7a; marker-start: url(#arrow-switch); marker-end: url(#arrow-switch); }
+      .deviceStrokeLeft { stroke: #d37dff; }
+      .deviceStrokeCenter { stroke: #6fe8ff; }
+      .deviceStrokeRight { stroke: #68ff84; }
+      .deviceStrokeSwitch { stroke: #ffe55a; }
+      .deviceStrokePc { stroke: #ff6d6d; }
+      .legendText { fill: #b8c3de; font-family: Arial, sans-serif; font-size: 13px; }
+    </style>
+    <marker id="arrow-default" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#b7c3e0" />
+    </marker>
+    <marker id="arrow-pc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#a98282" />
+    </marker>
+    <marker id="arrow-switch" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#a89f7a" />
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1500" height="920" />
+
+  <!-- Top row: Left (portrait), Center (landscape), Right (portrait) -->
+  <rect class="panel deviceStrokeLeft" x="80" y="80" width="230" height="340" />
+  <text class="title" x="100" y="112">Left Monitor</text>
+  <rect class="port" x="110" y="170" width="64" height="34" />
+  <text class="portText" x="131" y="192">DP</text>
+  <rect class="port" x="110" y="220" width="90" height="34" />
+  <text class="portText" x="129" y="242">HDMI</text>
+  <rect class="port" x="110" y="270" width="90" height="34" />
+  <text class="portText" x="129" y="292">HDMI</text>
+
+  <rect class="panel deviceStrokeCenter" x="390" y="80" width="420" height="240" />
+  <text class="title" x="410" y="112">Center Monitor</text>
+  <rect class="port" x="430" y="140" width="64" height="34" />
+  <text class="portText" x="451" y="162">DP</text>
+  <rect class="port" x="560" y="140" width="90" height="34" />
+  <text class="portText" x="579" y="162">HDMI</text>
+  <rect class="port" x="690" y="140" width="90" height="34" />
+  <text class="portText" x="709" y="162">HDMI</text>
+
+  <rect class="panel deviceStrokeRight" x="870" y="80" width="230" height="340" />
+  <text class="title" x="890" y="112">Right Monitor</text>
+  <rect class="port" x="900" y="170" width="90" height="34" />
+  <text class="portText" x="919" y="192">HDMI</text>
+  <rect class="port" x="900" y="220" width="90" height="34" />
+  <text class="portText" x="919" y="242">HDMI</text>
+  <rect class="port" x="900" y="270" width="64" height="34" />
+  <text class="portText" x="921" y="292">DP</text>
+
+  <!-- Switch near right monitor -->
+  <rect class="panel deviceStrokeSwitch" x="1160" y="140" width="220" height="210" />
+  <text class="title" x="1180" y="172">Switch</text>
+  <rect class="port" x="1190" y="205" width="64" height="34" />
+  <text class="portText" x="1211" y="227">DP</text>
+  <rect class="port" x="1280" y="205" width="64" height="34" />
+  <text class="portText" x="1301" y="227">DP</text>
+  <rect class="port" x="1190" y="255" width="90" height="34" />
+  <text class="portText" x="1209" y="277">HDMI</text>
+
+  <!-- HDMI Converter (positioned under switch) -->
+  <rect class="panel" x="1140" y="430" width="260" height="130" />
+  <text class="title" x="1160" y="462">HDMI Converter</text>
+  <rect class="port" x="1170" y="475" width="90" height="34" />
+  <text class="portText" x="1189" y="497">HDMI</text>
+  <rect class="port" x="1285" y="475" width="64" height="34" />
+  <text class="portText" x="1306" y="497">DP</text>
+
+  <!-- Gaming PC below all -->
+  <rect class="panel deviceStrokePc" x="470" y="620" width="500" height="220" />
+  <text class="title" x="490" y="652">Gaming PC</text>
+  <rect class="port" x="520" y="670" width="64" height="34" />
+  <text class="portText" x="541" y="692">DP</text>
+  <rect class="port" x="620" y="670" width="90" height="34" />
+  <text class="portText" x="639" y="692">HDMI</text>
+  <rect class="port" x="740" y="670" width="64" height="34" />
+  <text class="portText" x="761" y="692">DP</text>
+  <rect class="port" x="840" y="670" width="64" height="34" />
+  <text class="portText" x="861" y="692">DP</text>
+
+  <!-- Wires: orthogonal 90-degree routes -->
+  <!-- Left DP <-> Gaming PC DP2 (lower lane to avoid overlap) -->
+  <path class="wire wirePc" d="M772 704 L772 790 L60 790 L60 187 L110 187" />
+  <!-- Left HDMI2 -> Switch HDMI -->
+  <path class="wire wireSwitch" d="M200 287 L260 287 L260 330 L1130 330 L1130 272 L1190 272" />
+
+  <!-- Center DP <-> Gaming PC DP3 (PC side exits bottom, then goes left) -->
+  <path class="wire wirePc" d="M872 704 L872 760 L430 760 L430 157" />
+  <!-- Center HDMI2 -> HDMI Converter HDMI (enter converter HDMI from left edge) -->
+  <path class="wire wireSwitch" d="M735 174 L735 492 L1170 492" />
+
+  <!-- Right HDMI2 -> Gaming PC HDMI (start from left edge, enter PC HDMI from top) -->
+  <path class="wire wirePc" d="M900 237 L860 237 L860 610 L665 610 L665 670" />
+  <!-- Right DP -> Switch DP1 -->
+  <path class="wire wireSwitch" d="M964 287 L1080 287 L1080 250 L1190 250 L1190 222" />
+
+  <!-- Switch DP2 -> HDMI Converter DP -->
+  <path class="wire wireSwitch" d="M1312 239 L1312 475" />
+
+  <text class="legendText" x="80" y="885">Portrait side monitors, landscape center monitor, and orthogonal cable routing with overlap minimized.</text>
+</svg>
