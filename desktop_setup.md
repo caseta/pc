@@ -68,22 +68,23 @@ flowchart TB
     end
 
     %% Layout control:
-    %% - top row ordered left -> center -> right -> switch
-    %% - gaming PC below center/right area
-    subgraph TOP_ROW[" "]
-      direction LR
-      LEFT
-      CENTER
-      RIGHT
-      SWITCH
-    end
+    %% - top row ordered switch -> left -> center -> right
+    %% - gaming PC kept below the full top row
+    subgraph LAYOUT[" "]
+      direction TB
+      subgraph TOP_ROW[" "]
+        direction LR
+        SWITCH
+        LEFT
+        CENTER
+        RIGHT
+      end
 
-    subgraph BOTTOM_ROW[" "]
-      direction LR
-      PCBOX
+      subgraph BOTTOM_ROW[" "]
+        direction LR
+        PCBOX
+      end
     end
-
-    CENTER -.-> PCBOX
 
     %% Visible cable runs from the drawing
     PC_DP1 --> LM_H2
