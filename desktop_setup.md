@@ -12,7 +12,7 @@ Color mapping used from your markup:
 > Note: Port groups are now modeled exactly by device color box. Cable paths are drawn for the visible runs; if you want, I can do one more pass to label each cable with a nickname (e.g., `Cable A`, `Cable B`) for easier future edits.
 
 ```mermaid
-flowchart LR
+flowchart TB
     %% Devices and exact port sets from your color boxes
     subgraph LEFT["Left Monitor (Purple)"]
       LM[Left Monitor]
@@ -66,6 +66,24 @@ flowchart LR
       PC --- PC_DP2
       PC --- PC_DP3
     end
+
+    %% Layout control:
+    %% - top row ordered left -> center -> right -> switch
+    %% - gaming PC below center/right area
+    subgraph TOP_ROW[" "]
+      direction LR
+      LEFT
+      CENTER
+      RIGHT
+      SWITCH
+    end
+
+    subgraph BOTTOM_ROW[" "]
+      direction LR
+      PCBOX
+    end
+
+    CENTER -.-> PCBOX
 
     %% Visible cable runs from the drawing
     PC_DP1 --> LM_H2
