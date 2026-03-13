@@ -67,24 +67,19 @@ flowchart TB
       PC --- PC_DP3
     end
 
-    %% Layout control:
-    %% - top row ordered switch -> left -> center -> right
-    %% - gaming PC kept below the full top row
-    subgraph LAYOUT[" "]
-      direction TB
-      subgraph TOP_ROW[" "]
-        direction LR
-        SWITCH
-        LEFT
-        CENTER
-        RIGHT
-      end
+    %% Layout control (hidden anchors):
+    %% - top row fixed: switch -> left -> center -> right
+    %% - PC fixed below center
+    A[" "]:::invis --> B[" "]:::invis --> C[" "]:::invis --> D[" "]:::invis
+    C --> E[" "]:::invis
+    A --> SWITCH
+    B --> LEFT
+    C --> CENTER
+    D --> RIGHT
+    E --> PCBOX
 
-      subgraph BOTTOM_ROW[" "]
-        direction LR
-        PCBOX
-      end
-    end
+    classDef invis fill:transparent,stroke:transparent,color:transparent;
+    linkStyle 0,1,2,3,4,5,6,7,8 stroke:transparent;
 
     %% Visible cable runs from the drawing
     PC_DP1 --> LM_H2
